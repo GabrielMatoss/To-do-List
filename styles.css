@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(221, 213, 238);
+}
+
+main {
+  margin: 30px auto;
+  width: 100%;
+  max-width: 500px;
+  background-color: rgb(86, 41, 194);
+  border-radius: 10px;
+  padding: 40px;
+  color: white;
+  font-size: 18px;
+}
+
+.conteudo-topo {
+  text-align: center;
+}
+
+.conteudo-topo h1 {
+  margin-bottom: 5px;
+}
+
+.conteudo-topo input {
+  width: 80%;
+  padding: 15px;
+  border-radius: 10px;
+  outline: none;
+  background-color: rgb(128, 128, 221);
+  border: 1px solid rgb(219, 219, 219);
+  color: white;
+  transition: all 0.3s;
+}
+
+.conteudo-topo input::placeholder {
+  color: rgba(255, 255, 255, 0.699);
+}
+
+.conteudo-topo button {
+  width: 49px;
+  height: 49px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid rgb(219, 219, 219);
+  background-color: rgb(128, 128, 221);
+  color: white;
+  transition: all 0.3s;
+  margin-left: 5px;
+}
+
+.conteudo-topo button:hover,
+.conteudo-topo input:hover {
+  background-color: rgb(90, 90, 233);
+}
+
+#listaTarefas {
+  margin-top: 25px;
+}
+
+#listaTarefas .label-container {
+  padding: 20px;
+  background-color: rgb(128, 128, 221);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#listaTarefas .label-container:hover {
+  background-color: rgb(90, 90, 233);
+}
+#listaTarefas .inputAndText {
+  display: flex;
+  gap: 8px;
+}
+
+#listaTarefas .inputAndText > input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+}
+
+.btnAcao {
+  border-radius: 20px;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(128, 128, 221);
+  outline: none;
+  border: 1px solid rgb(219, 219, 219);
+  transition: all 0.3s;
+}
+
+.btnAcao:hover {
+  background-color: rgb(90, 90, 233);
+}
+
+@media (max-width: 372px){
+    .conteudo-topo button{
+        display: none;
+    }
+    .conteudo-topo input::placeholder {
+        color: rgba(255, 255, 255, 0.699);
+        font-size: .6rem;
+      }
+}
